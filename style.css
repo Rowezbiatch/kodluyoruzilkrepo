@@ -1,0 +1,64 @@
+.heart {
+      --c: red;
+      width: 200px;
+      aspect-ratio: 1;
+      background:
+       /* 1 */ radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+       /* 2 */ radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+       /* 3 */ conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+      background-repeat: no-repeat;
+}
+#---------------------------------------------------------------------------------------------------
+/*Kalplerin merkez noktaları eşit değil */
+
+.heart {
+      --c: red;
+      width: 200px;
+      aspect-ratio: 1;
+      background:
+       radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
+       radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
+       conic-gradient(from -45deg at 50% 84%,var(--c) 90deg,#0000 0) 
+        bottom/100% 50% no-repeat;
+    }
+
+    .heart {
+      --c: red;
+      width: 200px;
+      aspect-ratio: 1;
+      background:
+       radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+       radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+       conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    .heart {
+      --c: red;
+      width: 200px;
+      aspect-ratio: 1;
+      background:
+       radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+       radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+       conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+      background-repeat: no-repeat;
+    }
+    /*Bu şekilde kalplerin yerini ortaya getirebilirsiniz veya yerini değiştirebilirsiz */
+    
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-content: center;
+      place-items: center;
+      grid-auto-flow: column;
+      gap: 15px;
+    }
+ 
+
+
+
+
+
+
